@@ -54,7 +54,7 @@ jobs:
 
       - name: Terraform Plan
         id: plan
-        run: terraform plan -no-colr -input=false -out
+        run: terraform plan -no-colr -input=false -out planfile
         continue-on-error: true
 
       - name: Terraform plan status
